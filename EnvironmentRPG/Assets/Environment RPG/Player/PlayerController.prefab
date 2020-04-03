@@ -881,6 +881,36 @@ Transform:
   m_Father: {fileID: 6802020271629829188}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1203878918693619080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8164779830205006731}
+  m_Layer: 0
+  m_Name: rustySwordHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8164779830205006731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203878918693619080}
+  m_LocalRotation: {x: -0.8293964, y: 0.5371528, z: -0.081571236, w: 0.13005596}
+  m_LocalPosition: {x: 0.067, y: 0.025, z: 0.034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7066884790370340726}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -172.64, y: -16.1, z: 66.9}
 --- !u!1 &1276915878963236526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4165,8 +4195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 0
-  selectedToolbar: 0
+  openCloseWindow: 1
+  selectedToolbar: 3
   damageLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -4192,7 +4222,7 @@ MonoBehaviour:
   applyRecoilToCamera: 1
   useLeftIK: 1
   useRightIK: 1
-  weaponIKAdjustList: {fileID: 0}
+  weaponIKAdjustList: {fileID: 11400000, guid: 17873b87fbb56cc4b85058d7335c70df, type: 2}
   useAmmoDisplay: 1
   leftWeaponAmmoDisplayID: -1
   rightWeaponAmmoDisplayID: 1
@@ -4418,8 +4448,26 @@ MonoBehaviour:
     type: 3}
   inventory: {fileID: 0}
   itemListData: {fileID: 11400000, guid: 1138da18640992c49a3a69f342164def, type: 2}
-  itemsFilter: 00000000
-  startItems: []
+  itemsFilter: 010000000200000003000000040000000500000000000000
+  startItems:
+  - id: 7
+    amount: 1
+    attributes:
+    - name: 2
+      value: 30
+      isBool: 0
+    - name: 3
+      value: 20
+      isBool: 0
+    - name: 4
+      value: 85
+      isBool: 0
+    - name: 5
+      value: 70
+      isBool: 0
+    changeAttributes: 0
+    autoEquip: 1
+    indexArea: 0
   items: []
   onStartItemUsage:
     m_PersistentCalls:
@@ -4486,7 +4534,8 @@ MonoBehaviour:
     area: {fileID: 0}
     handler:
       defaultHandler: {fileID: 7407214304225599607}
-      customHandlers: []
+      customHandlers:
+      - {fileID: 8164779830205006731}
     onInstantiateEquiment:
       m_PersistentCalls:
         m_Calls:
@@ -5324,6 +5373,7 @@ Transform:
   - {fileID: 8230709419154897298}
   - {fileID: 6923612160876776266}
   - {fileID: 7407214304225599607}
+  - {fileID: 8164779830205006731}
   m_Father: {fileID: 7701676755203099107}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

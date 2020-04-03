@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1adabc1ae49fd3c44a36cc9152ebb0f9, type: 3}
-  m_Name: vGreatSword
+  m_Name: RustySword
   m_EditorClassIdentifier: 
   id: 7
   description: Melee Weapon
@@ -443,7 +443,7 @@ MonoBehaviour:
   stackable: 0
   maxStack: 1
   amount: 0
-  originalObject: {fileID: 1000014209087140, guid: d03b45803e637bb4fb00a1ca9030d66e,
+  originalObject: {fileID: 802337802276143720, guid: c91ad419ca63585469894235a8b0775b,
     type: 3}
   dropObject: {fileID: 1000012655258636, guid: cf28841817afdab4c8060f470a322c37, type: 3}
   attributes:
@@ -469,7 +469,7 @@ MonoBehaviour:
   DisableAnim: HighBack
   enableDelayTime: 0.5
   disableDelayTime: 0.5
-  customHandler: meleeHandler
+  customHandler: rustySwordHandler
   twoHandWeapon: 0
 --- !u!114 &114000012184096246
 MonoBehaviour:
