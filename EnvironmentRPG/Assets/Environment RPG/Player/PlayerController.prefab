@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &114816571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114816572}
+  m_Layer: 0
+  m_Name: pistolHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &114816572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114816571}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0.0666, y: 0.0483, z: -0.021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7066884790370340726}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -180, y: -90, z: 90}
 --- !u!1 &1082858167
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,6 +151,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1701656878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701656879}
+  m_Layer: 0
+  m_Name: wizardStaff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701656879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701656878}
+  m_LocalRotation: {x: 0.25013313, y: 0.9613111, z: -0.023169134, w: 0.11303837}
+  m_LocalPosition: {x: 0.0538, y: -0.0426, z: 0.0016}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 7066884790370340726}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 365.802, y: -191.935, z: 28.563002}
 --- !u!1 &1791495796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,7 +3811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openCloseEvents: 0
   openCloseWindow: 1
-  selectedToolbar: 1
+  selectedToolbar: 6
   _isDead: 0
   _currentHealth: 0
   isImmortal: 0
@@ -4466,6 +4526,42 @@ MonoBehaviour:
       value: 70
       isBool: 0
     changeAttributes: 0
+    autoEquip: 0
+    indexArea: 0
+  - id: 24
+    amount: 1
+    attributes:
+    - name: 2
+      value: 30
+      isBool: 0
+    - name: 3
+      value: 20
+      isBool: 0
+    - name: 4
+      value: 85
+      isBool: 0
+    - name: 5
+      value: 70
+      isBool: 0
+    changeAttributes: 0
+    autoEquip: 1
+    indexArea: 0
+  - id: 25
+    amount: 1
+    attributes:
+    - name: 2
+      value: 30
+      isBool: 0
+    - name: 3
+      value: 20
+      isBool: 0
+    - name: 4
+      value: 85
+      isBool: 0
+    - name: 5
+      value: 70
+      isBool: 0
+    changeAttributes: 0
     autoEquip: 1
     indexArea: 0
   items: []
@@ -4536,6 +4632,8 @@ MonoBehaviour:
       defaultHandler: {fileID: 7407214304225599607}
       customHandlers:
       - {fileID: 8164779830205006731}
+      - {fileID: 1701656879}
+      - {fileID: 114816572}
     onInstantiateEquiment:
       m_PersistentCalls:
         m_Calls:
@@ -5374,6 +5472,8 @@ Transform:
   - {fileID: 6923612160876776266}
   - {fileID: 7407214304225599607}
   - {fileID: 8164779830205006731}
+  - {fileID: 1701656879}
+  - {fileID: 114816572}
   m_Father: {fileID: 7701676755203099107}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -16,9 +16,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd184c97370320c47af18aa86004b754, type: 2}
   - {fileID: 11400000, guid: 6853717ad3f9f0c44b143a3a53f5d230, type: 2}
   - {fileID: 11400000, guid: ee1413e3b70fbc6438b7ec6912375beb, type: 2}
-  - {fileID: 11400000, guid: cd3f6859f21a8004a8786146328a19eb, type: 2}
+  - {fileID: 11400000, guid: e3366854ce171f74a84616fff651e85d, type: 2}
   - {fileID: 11400000, guid: b54de5e89e22c8f4e85df8b359f538e6, type: 2}
+  - {fileID: 11400000, guid: fe569301fc0b9724ebc89b8dc93d5f59, type: 2}
   ikRotationOffsetR: {x: 8, y: 0, z: 24}
   ikPositionOffsetR: {x: -0.02, y: 0.02, z: 0.05}
-  ikRotationOffsetL: {x: 0, y: -2, z: 8}
-  ikPositionOffsetL: {x: 0.03, y: 0.01, z: 0}
+  ikRotationOffsetL: {x: -2.8, y: 78.3, z: -71.8}
+  ikPositionOffsetL: {x: 0.254, y: 0.192, z: 0.114}
